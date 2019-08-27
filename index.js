@@ -1,3 +1,5 @@
+import { parse } from "url";
+
 /* Given Code, don't edit */
 
 function handleClick(e) {
@@ -9,3 +11,16 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+
+
+
+function greet(timeString) {
+  const time = parseInt(timeString, 10);
+  if ( time < 12) return "Good Morning"
+  if ( time > 17) return "Good Evening"
+  return "Good Afternoon"
+}
+
+function displayMessage(string) {
+  document.getElementById("greeting").innerText = string;
+}
